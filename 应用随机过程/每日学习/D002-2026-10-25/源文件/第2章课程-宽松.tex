@@ -1,0 +1,262 @@
+\documentclass[UTF8,a4paper,11pt]{ctexart}
+\usepackage[margin=22mm,headheight=14pt,footskip=12mm]{geometry}
+\usepackage{amsmath,amssymb,array,longtable,booktabs,tikz,needspace,enumitem,fancyhdr,hyperref}
+\usepackage{microtype}
+\hypersetup{colorlinks=false,pdfborder={0 0 0},pdfauthor={Good Learning},bookmarks=false}
+\newfontfamily\circledfont{Segoe UI Symbol}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{.65em}
+\linespread{1.18}
+\raggedbottom
+\setcounter{secnumdepth}{0}
+\setlist{leftmargin=2.2em,itemsep=.4em,topsep=.5em}
+\ctexset{section={format=\Large\bfseries\sffamily,beforeskip=1.35em,afterskip=.65em},
+subsection={format=\large\bfseries\sffamily,beforeskip=1em,afterskip=.45em}}
+\newcommand{\chaptertitle}[1]{\Needspace{8\baselineskip}\noindent{\LARGE\bfseries\sffamily #1}\par\vspace{4mm}\hrule\vspace{6mm}}
+\newcommand{\CompactQuestion}[2]{\par\noindent\textbf{#1.}\ #2\par\vspace{.8em}}
+\newcommand{\PracticeQuestion}[3]{\par\Needspace{4\baselineskip}\noindent\begin{minipage}{\linewidth}\textbf{#1.}\ #2\par\noindent\rule{0pt}{#3mm}\par\end{minipage}\par}
+\newcommand{\CompactQuestionColon}[2]{\par\noindent\textbf{#1：}\ #2\par\vspace{.8em}}
+\newcommand{\PracticeQuestionColon}[3]{\par\Needspace{4\baselineskip}\noindent\begin{minipage}{\linewidth}\textbf{#1：}\ #2\par\noindent\rule{0pt}{#3mm}\par\end{minipage}\par}
+\pagestyle{fancy}\fancyhf{}\fancyfoot[C]{\thepage}\renewcommand{\headrulewidth}{0pt}
+\begin{document}
+\thispagestyle{empty}
+\noindent{\sffamily\footnotesize 每日课程}\hfill{\sffamily\footnotesize 学习导图}\par
+\vspace{7mm}
+\noindent{\sffamily\fontsize{25}{30}\selectfont\bfseries 第2章 随机过程的基本概念（宽松排版型）}\par
+\vspace{4mm}\noindent\rule{\linewidth}{.85pt}\par\vspace{6mm}
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,every node/.style={font=\sffamily}]
+\path[use as bounding box] (-8.1,-18.7) rectangle (8.1,.4);
+\node[font=\sffamily\Large\bfseries] at (0,-.6) {第2章 基本概念与基本类型};
+\node[font=\sffamily\small,text=black!55] at (0,-1.25) {用分布族和数字特征描述过程};
+\node[anchor=north west,font=\sffamily\fontsize{22}{24}\selectfont\bfseries,text=black!50] at (-7.35,-2.35) {01};
+\node[anchor=north west,text width=5.8cm,align=left,font=\sffamily\large\bfseries] at (-6.199999999999999,-2.3200000000000003) {定义与一维分布};
+\node[anchor=north west,text width=5.9cm,align=left,font=\sffamily\small] at (-6.199999999999999,-3.0700000000000003) {2.1\\[.25em]固定 t 得随机变量\\[.25em]固定 ω 得轨道};
+\draw[black!35,line width=.4pt] (-7.35,-5.050000000000001) -- (-0.2999999999999998,-5.050000000000001);
+\node[anchor=north west,font=\sffamily\fontsize{22}{24}\selectfont\bfseries,text=black!50] at (0.85,-2.35) {02};
+\node[anchor=north west,text width=5.8cm,align=left,font=\sffamily\large\bfseries] at (2.0,-2.3200000000000003) {有限维分布};
+\node[anchor=north west,text width=5.9cm,align=left,font=\sffamily\small] at (2.0,-3.0700000000000003) {2.2\\[.25em]对称性与相容性\\[.25em]Kolmogorov 定理};
+\draw[black!35,line width=.4pt] (0.85,-5.050000000000001) -- (7.8999999999999995,-5.050000000000001);
+\node[anchor=north west,font=\sffamily\fontsize{22}{24}\selectfont\bfseries,text=black!50] at (0.85,-7.7) {03};
+\node[anchor=north west,text width=5.8cm,align=left,font=\sffamily\large\bfseries] at (2.0,-7.67) {均值与自相关};
+\node[anchor=north west,text width=5.9cm,align=left,font=\sffamily\small] at (2.0,-8.42) {2.3\\[.25em]μ、R、C 三个函数\\[.25em]加确定函数只改均值};
+\draw[black!35,line width=.4pt] (0.85,-10.4) -- (7.8999999999999995,-10.4);
+\node[anchor=north west,font=\sffamily\fontsize{22}{24}\selectfont\bfseries,text=black!50] at (-7.35,-7.7) {04};
+\node[anchor=north west,text width=5.8cm,align=left,font=\sffamily\large\bfseries] at (-6.199999999999999,-7.67) {平稳性与增量};
+\node[anchor=north west,text width=5.9cm,align=left,font=\sffamily\small] at (-6.199999999999999,-8.42) {2.3\\[.25em]严平稳与宽平稳\\[.25em]独立增量与平稳增量};
+\draw[black!35,line width=.4pt] (-7.35,-10.4) -- (-0.2999999999999998,-10.4);
+\node[anchor=north west,font=\sffamily\fontsize{22}{24}\selectfont\bfseries,text=black!50] at (-7.35,-13.05) {05};
+\node[anchor=north west,text width=5.8cm,align=left,font=\sffamily\large\bfseries] at (-6.199999999999999,-13.020000000000001) {三个典型例子};
+\node[anchor=north west,text width=5.9cm,align=left,font=\sffamily\small] at (-6.199999999999999,-13.770000000000001) {部分和过程\\[.25em]随机电报信号\\[.25em]泊松过程预告};
+\draw[black!35,line width=.4pt] (-7.35,-15.75) -- (-0.2999999999999998,-15.75);
+\node[anchor=north west,font=\sffamily\fontsize{22}{24}\selectfont\bfseries,text=black!50] at (0.85,-13.05) {06};
+\node[anchor=north west,text width=5.8cm,align=left,font=\sffamily\large\bfseries] at (2.0,-13.020000000000001) {练习与反馈};
+\node[anchor=north west,text width=5.9cm,align=left,font=\sffamily\small] at (2.0,-13.770000000000001) {B1—B8\\[.25em]限时 30 分钟\\[.25em]明天进入第 3 章};
+\draw[black!35,line width=.4pt] (0.85,-15.75) -- (7.8999999999999995,-15.75);
+\draw[->,black!55,line width=.8pt] (-.12,-3.7) -- (.55,-3.7);
+\draw[->,black!55,line width=.8pt] (7.85,-5.45) -- (7.85,-7.2);
+\draw[->,black!55,line width=.8pt] (.52,-9.05) -- (-.15,-9.05);
+\draw[->,black!55,line width=.8pt] (-7.85,-10.8) -- (-7.85,-12.55);
+\draw[->,black!55,line width=.8pt] (-.12,-14.4) -- (.55,-14.4);
+\node[font=\sffamily\small,text=black!55] at (0,-18.1) {教材 2.1—2.3 · 笔记第 3—4 页};
+\end{tikzpicture}
+\end{center}
+\clearpage
+
+\chaptertitle{第2章 随机过程的基本概念和基本类型（D002）}
+对应教材 2.1—2.3（第 032—042 页），以及李英老师笔记第 3—4 页。这一章不教你算具体模型，而是建立“随机过程是什么、怎么描述它”的语言：分布函数族、均值与自相关、平稳性、增量性质。第 3 章泊松过程、第 5 章马尔可夫链都直接用这套语言，所以概念必须一次说清。
+
+\textbf{今天的时间分配（2 小时）}：概念与例题 70 分钟，填步题与变式 40 分钟，独立练习 30 分钟，回顾 10 分钟。
+
+\Needspace{6\baselineskip}
+\section{一、开课前 5 分钟：自检、节奏与用法}
+\textbf{前置自检（3 题，限 2 分钟）}
+
+\begin{enumerate}
+\item 一维分布函数 $F_t(x)$ 描述的是什么？它能描述两个时刻的联合规律吗？
+\item 若 $X,Y$ 相互独立，联合密度与边缘密度是什么关系？
+\item 写出协方差的定义式。
+\end{enumerate}
+三题都会，直接进入单元 1；第 3 题不会，先回第 1 章 1.3 节。第 2 章本身不引入新的计算工具，只是把“一个随机变量”换成“一族随机变量”。它的概念会原样出现在后面所有章节：2023 级期末卷考过求 $E[N(t)N(t+s)]$，用的就是泊松过程的均值与自相关函数；摸球那道马尔可夫链题要先判断“状态空间与时间参数”；卷末还要求写出泊松过程与布朗运动的定义。所以本章的目标不是“看懂”，而是能用自己的话定义。
+
+\textbf{今晚节奏（2 小时）}
+
+{\small\renewcommand{\arraystretch}{1.38}\setlength{\tabcolsep}{3.5pt}
+\begin{longtable}{P{0.17\linewidth}P{0.48\linewidth}P{0.28\linewidth}}
+\toprule
+\bfseries 时间 & \bfseries 做什么 & \bfseries 产出 \\
+\midrule
+\endfirsthead
+\toprule
+\bfseries 时间 & \bfseries 做什么 & \bfseries 产出 \\
+\midrule
+\endhead
+0—5 分钟 & 自检 3 题 & 判断是否需要回看第 1 章 \\
+\addlinespace[.35em]
+5—75 分钟 & 单元 1—4：概念 + 完整例题 & 笔记：$\mu_X$、$R_X$ 与两条平稳性定义 \\
+\addlinespace[.35em]
+75—115 分钟 & 填步题 R1—R5、变式 V1—V5 & 每题写出完整步骤 \\
+\addlinespace[.35em]
+115—150 分钟 & 独立练习 B1—B8（限时） & 答在宽松版的空白处 \\
+\addlinespace[.35em]
+150—160 分钟 & 对答案，标出不确定的题 & 反馈清单（拍照发我） \\
+\addlinespace[.35em]
+\bottomrule
+\end{longtable}
+}
+\textbf{两版 PDF 怎么用}：紧凑版用来读，宽松版留了手写空白；先做练习再看第七部分答案。答案给的是“可以照着检验的版本”，如果你写出另一种等价表达，不必逐字对照。
+
+\clearpage
+\Needspace{6\baselineskip}
+\section{单元 1 随机过程的定义与一维分布（2.1）}
+\textbf{概念与条件}
+
+\begin{itemize}
+\item 设 $(\Omega,\mathcal{F},P)$ 是概率空间，$T$ 是指标集（常取 $[0,+\infty)$ 或 $\{0,1,2,\dots\}$）。若对每个 $t\in T$，$X(t)$ 都是同一概率空间上的随机变量，则称 $\{X(t),t\in T\}$ 为随机过程。
+\item 固定 $\omega$，$t\mapsto X(t,\omega)$ 是一条样本函数（轨道）；固定 $t$，$\omega\mapsto X(t,\omega)$ 是一个随机变量。这两句话是理解全章的钥匙：随机过程同时是“一族随机变量”和“一条随机曲线”。
+\item 状态空间：$X(t)$ 所有可能取值的集合。状态空间离散、指标集离散的叫离散参数链；两者都连续的叫连续参数过程。
+\item 一维分布：$F_t(x)=P(X(t)\le x)$，$t\in T$。它只描述单个时刻的规律，几乎不能反映过程随时间的变化，所以下面要引入有限维分布。
+\end{itemize}
+\textbf{完整例题}
+
+设 $X(t)=A\cos(\omega t)+B\sin(\omega t)$，其中 $\omega>0$ 为常数，$A,B$ 相互独立且都服从 $N(0,\sigma^2)$。求 $E[X(t)]$ 与 $\mathrm{Var}[X(t)]$。
+
+第一步，对每个固定的 $t$，$X(t)$ 是 $A,B$ 的线性组合，先算期望：$E[X(t)]=\cos(\omega t)E(A)+\sin(\omega t)E(B)=0$。 第二步，算方差需要 $E[X(t)^2]$：展开得 $A^2\cos^2+B^2\sin^2+2AB\cos\sin$。 第三步，用独立性：$E(A^2)=E(B^2)=\sigma^2$，$E(AB)=E(A)E(B)=0$。 第四步，代入得 $\mathrm{Var}[X(t)]=\sigma^2(\cos^2+\sin^2)=\sigma^2$，与 $t$ 无关。 这说明该过程的均值恒为 0、方差恒定，是一个“能量稳定”的振荡过程；下一单元会看到它还是宽平稳的。
+
+\Needspace{4\baselineskip}
+\subsection{举一反三}
+\PracticeQuestion{R1}{设 $X(t)=A t$，$A\sim N(0,1)$。求 $E[X(t)]$、$\mathrm{Var}[X(t)]$ 与一维分布 $F_t(x)$。}{42}
+\PracticeQuestion{V1}{若上题改为 $X(t)=A t+B$，$A,B$ 独立同 $N(0,1)$，求 $E[X(t)]$ 与 $\mathrm{Var}[X(t)]$，并问方差是否与 $t$ 有关。}{30}
+\PracticeQuestion{M1}{判断：一维分布族 $\{F_t(\cdot),t\ge0\}$ 能否完全确定一个随机过程？若不能，举一个两个不同过程具有相同一维分布的例子。}{40}
+\clearpage
+\Needspace{6\baselineskip}
+\section{单元 2 有限维分布、对称性与相容性（2.2）}
+\textbf{概念与条件}
+
+\begin{itemize}
+\item 任意取 $n$ 个时刻 $t_1<\dots<t_n$，随机向量 $(X(t_1),\dots,X(t_n))$ 的联合分布函数记作 $F_{t_1,\dots,t_n}(x_1,\dots,x_n)$。所有这些联合分布构成的集合叫有限维分布族。
+\item 对称性：对任意排列 $\pi$，$F_{t_1,\dots,t_n}(x_1,\dots,x_n)=F_{t_{\pi(1)},\dots,t_{\pi(n)}}(x_{\pi(1)},\dots,x_{\pi(n)})$。它的意思是“时刻的顺序不能改变过程本身的联合规律”。
+\item 相容性：把多出来的坐标取 $+\infty$，应退回少一维的联合分布，即 $F_{t_1,\dots,t_n}(x_1,\dots,x_{n-1},+\infty)=F_{t_1,\dots,t_{n-1}}(x_1,\dots,x_{n-1})$。
+\item Kolmogorov 存在定理：若给定一个满足对称性与相容性的有限维分布族，则存在一个随机过程，其有限维分布恰为该族。这保证“先给分布、再造过程”是合法的。
+\item 求有限维分布的两种常见路径：直接由模型的联合密度积分；或者利用独立增量性质，把联合分布拆成增量的乘积。
+\end{itemize}
+\textbf{完整例题}
+
+设 $\{X(t)\}$ 是独立增量过程，$X(0)=0$，且 $X(t)-X(s)\sim N(0,t-s)$（即第 7 章的布朗运动）。求 $(X(t_1),X(t_2))$ 在 $0<t_1<t_2$ 时的联合密度。
+
+第一步，做变量替换，把相关的量换成独立增量：令 $Y_1=X(t_1)-X(0)=X(t_1)$，$Y_2=X(t_2)-X(t_1)$。 第二步，由独立增量性，$Y_1$ 与 $Y_2$ 独立，且 $Y_1\sim N(0,t_1)$、$Y_2\sim N(0,t_2-t_1)$。 第三步，写出 $(Y_1,Y_2)$ 的联合密度：$f_{Y_1,Y_2}(y_1,y_2)=\frac{1}{2\pi\sqrt{t_1(t_2-t_1)}}\exp\left[-\frac{y_1^2}{2t_1}-\frac{y_2^2}{2(t_2-t_1)}\right]$。 第四步，换回 $(X(t_1),X(t_2))$：由 $x_1=y_1$、$x_2=y_1+y_2$ 知雅可比行列式为 1，于是把 $y_1=x_1$、$y_2=x_2-x_1$ 代入即得联合密度。 结论：$f(x_1,x_2)=\frac{1}{2\pi\sqrt{t_1(t_2-t_1)}}\exp\left[-\frac{x_1^2}{2t_1}-\frac{(x_2-x_1)^2}{2(t_2-t_1)}\right]$。 要点：凡是“求联合分布”，先问能不能换成独立增量；能换就把联合密度写成乘积。
+
+\Needspace{4\baselineskip}
+\subsection{举一反三}
+\PracticeQuestion{R2}{设 $\{N(t)\}$ 是参数为 $\lambda$ 的泊松过程，$0<t_1<t_2$。写出 $(N(t_1),N(t_2))$ 的联合分布列（用增量独立、$N(t_2)-N(t_1)\sim P(\lambda(t_2-t_1))$）。}{38}
+\PracticeQuestion{V2}{若把上题改成 $t_1>t_2$，联合分布会不会变？说明对称性在这里如何体现。}{42}
+\PracticeQuestion{M2}{判断：给定一个满足对称性与相容性的有限维分布族，是否一定能构造出定义在同一概率空间上、具有这些有限维分布的过程？这条结论叫什么定理？}{34}
+\clearpage
+\Needspace{6\baselineskip}
+\section{单元 3 均值函数、自相关函数与协方差（2.3 前半）}
+\textbf{概念与条件}
+
+\begin{itemize}
+\item 均值函数 $\mu_X(t)=E[X(t)]$；方差函数 $\mathrm{Var}_X(t)=E[X(t)-\mu_X(t)]^2$。
+\item 自相关函数 $R_X(s,t)=E[X(s)X(t)]$；自协方差函数 $C_X(s,t)=R_X(s,t)-\mu_X(s)\mu_X(t)$。两者的区别只差一个均值乘积，题目问“自相关”就不要写成协方差。
+\item 由 $R_X$ 与 $\mu_X$ 可以算出过程在任意两个时刻的线性相关程度；这两条函数是第 2 章唯一需要动手算的对象。
+\item 判断两个过程的关系：若 $Y(t)=X(t)+\varphi(t)$ 且 $\varphi$ 是确定函数，则均值平移、协方差不变。
+\end{itemize}
+\textbf{完整例题（笔记例 5）}
+
+设 $X(t)$ 的均值函数为 $\mu(t)$、自协方差函数为 $\Gamma(s,t)$ 已知，$\varphi(t)$ 是确定函数。令 $Y(t)=X(t)+\varphi(t)$，求 $E[Y(t)]$ 与 $\mathrm{Cov}[Y(s),Y(t)]$。
+
+第一步，期望是线性的：$E[Y(t)]=E[X(t)]+\varphi(t)=\mu(t)+\varphi(t)$。 第二步，写协方差定义：$\mathrm{Cov}[Y(s),Y(t)]=E\{[Y(s)-E Y(s)][Y(t)-E Y(t)]\}$。 第三步，代入 $Y(s)-E Y(s)=X(s)-\mu(s)$、$Y(t)-E Y(t)=X(t)-\mu(t)$，确定函数 $\varphi$ 在减期望时被消掉了。 第四步，得到 $\mathrm{Cov}[Y(s),Y(t)]=\Gamma(s,t)$，即加确定项不改变协方差，只改变均值与自相关。 结论：$R_Y(s,t)=\Gamma(s,t)+[\mu(s)+\varphi(s)][\mu(t)+\varphi(t)]$。
+
+\Needspace{4\baselineskip}
+\subsection{举一反三}
+\PracticeQuestion{R3}{设 $X(t)=A\cos\omega t$，$A\sim N(0,1)$，求 $\mu_X(t)$ 与 $R_X(s,t)$。}{42}
+\PracticeQuestion{V3}{承接 R3，令 $Y(t)=X(t)+3$，求 $R_Y(s,t)$，并与 $R_X(s,t)$ 比较差别。}{34}
+\PracticeQuestion{M3}{判断：若 $C_X(s,t)=0$ 对一切 $s\ne t$ 成立，是否说明 $X(s)$ 与 $X(t)$ 独立？说明理由。}{34}
+\clearpage
+\Needspace{6\baselineskip}
+\section{单元 4 平稳性与增量过程（2.3 后半）}
+\textbf{概念与条件}
+
+\begin{itemize}
+\item 严平稳：对任意 $n$、$t_1,\dots,t_n$ 与 $h>0$，$(X(t_1+h),\dots,X(t_n+h))$ 与 $(X(t_1),\dots,X(t_n))$ 同分布。它的含义是“统计规律只与时间间隔有关，与起点无关”。
+\item 宽平稳（二阶矩平稳）：$\mu_X(t)=\mu$ 为常数，且 $R_X(s,t)=R_X(t-s)$ 只依赖时间差；等价地自协方差也只依赖差。宽平稳只要求一、二阶矩，条件比严平稳弱。
+\item 关系：严平稳且二阶矩有限 $\Rightarrow$ 宽平稳；反之一般不成立，但\textbf{正态过程}中两者等价（正态过程的有限维分布由均值与协方差完全决定）。
+\item 独立增量过程：对任意 $t_1<\dots<t_n$，增量 $X(t_1)-X(t_0),X(t_2)-X(t_1),\dots$ 相互独立。平稳增量：增量分布只依赖时间差，即 $X(t+h)-X(t)$ 与 $h$ 有关、与 $t$ 无关。
+\item 两者都满足的称独立平稳增量过程，泊松过程与布朗运动都是它的例子（第 3、7 章分别研究）。
+\end{itemize}
+\textbf{完整例题（笔记例 3 的写法）}
+
+设 $Z_1,Z_2,\dots$ 独立同分布，令 $X_n=Z_1+\dots+Z_n$，$n\ge1$，并令 $X_0=0$。证明 $\{X_n\}$ 有平稳增量。
+
+第一步，取任意 $0\le n_1<n_2<\dots<n_k$，考察增量 $X_{n_{i+1}}-X_{n_i}$。 第二步，把增量写成求和：$X_{n_{i+1}}-X_{n_i}=\sum_{j=n_i+1}^{n_{i+1}}Z_j$。 第三步，不同 $i$ 对应的求和指标区间互不重叠，所以这些增量由互不相同的 $Z_j$ 相加而成；由 $Z_j$ 的独立性，它们相互独立。 第四步，再看分布：每个增量都是若干个独立同分布 $Z$ 之和，只由个数 $n_{i+1}-n_i$ 决定，与起点 $n_i$ 无关。 结论：$\{X_n\}$ 是独立增量过程，且增量分布只依赖时间差，因此有平稳增量。 要点：第三步用“不同区间不重叠”证明独立性，第四步用“同分布”证明平稳性，两句话不能混。
+
+\Needspace{4\baselineskip}
+\subsection{举一反三}
+\PracticeQuestion{R4}{设 $X(t)=at+B$，$B\sim N(0,1)$，$a\ne0$ 为常数。判断它是否宽平稳，并写出 $\mu_X$ 与 $R_X$。}{42}
+\PracticeQuestion{V4}{若把 R4 改为 $X(t)=aB$（与 $t$ 无关），判断平稳性；再说明为什么“确定性趋势”会破坏平稳性。}{40}
+\PracticeQuestion{M4}{判断：独立增量过程一定有平稳增量；平稳增量过程一定独立增量。分别举反例或说明理由。}{38}
+\clearpage
+\Needspace{6\baselineskip}
+\section{单元 5 三个典型例子}
+\textbf{例 5.1（部分和过程）} $X_n=Z_1+\dots+Z_n$，$Z_i$ 独立同分布。它是离散时间独立增量过程；$\mu_{X_n}=nE(Z_1)$，$R_X(m,n)=\min(m,n)\mathrm{Var}(Z_1)+mn[E(Z_1)]^2$。它不是宽平稳的，因为均值随 $n$ 变。
+
+\textbf{例 5.2（随机电报信号）} 设 $N(t)$ 是参数 $\lambda$ 的泊松过程，令 $X(t)=(-1)^{N(t)}$，取值 $\pm1$。则 $E[X(t)]=e^{-2\lambda t}$（用 $E[(-1)^{N(t)}]=e^{\lambda t(-2)}$，即泊松分布的特征函数在 $t=-2$ 处取值），$R_X(s,t)=E[(-1)^{N(s)+N(t)}]=e^{-2\lambda|t-s|}$。它宽平稳，但均值不为常数方向需要注意：本题均值随 $t$ 衰减，所以严格说它不满足宽平稳的“均值为常数”，这是课本常用的“近似平稳”讨论点，考试若问“是否宽平稳”，要按定义逐条核对。
+
+\textbf{例 5.3（泊松过程预告）} 第 3 章将证明：$N(t)$ 有独立平稳增量、$N(t)\sim P(\lambda t)$，因此 $\mu_{N}(t)=\lambda t$，$R_N(s,t)=\lambda\min(s,t)+\lambda^2st$。现在只需记住“独立平稳增量 + 计数”这个组合。
+
+\Needspace{4\baselineskip}
+\subsection{举一反三}
+\PracticeQuestion{R5}{对例 5.1，取 $Z_i$ 服从参数 $\frac12$ 的两点分布（取值 $0,1$），写出 $\mu_{X_n}$ 与 $R_X(m,n)$。}{44}
+\PracticeQuestion{V5}{对例 5.2，验证 $E[X(t)]=e^{-2\lambda t}$：写出泊松分布的特征函数并代入。}{29}
+\PracticeQuestion{M5}{判断：例 5.2 中的 $X(t)$ 是否严平稳？提示：看一维分布是否随 $t$ 变化。}{43}
+\clearpage
+\Needspace{6\baselineskip}
+\section{单元 6 独立练习}
+限时 30 分钟。
+
+\textbf{B1.} 写出随机过程的定义，并说明“固定 $t$”与“固定 $\omega$”分别得到什么。
+
+\textbf{B2.} 设 $X(t)=A\cos\omega t+B\sin\omega t$，$A,B$ 独立同 $N(0,1)$。求 $\mu_X(t)$、$R_X(s,t)$，并判断是否宽平稳。
+
+\textbf{B3.} 写出有限维分布族的对称性与相容性条件，并说明 Kolmogorov 定理的作用。
+
+\textbf{B4.} 设 $X(t)=tA$，$A\sim N(0,1)$，求一维分布 $F_t(x)$ 与 $R_X(s,t)$，判断是否宽平稳。
+
+\textbf{B5.} 设 $\{N(t)\}$ 为参数 $\lambda$ 的泊松过程，写出 $(N(t_1),N(t_2))$ 的联合分布列（$t_1<t_2$）。
+
+\textbf{B6.} 判断并说明理由：独立增量过程是否一定是马尔可夫过程（可只答“是/否 + 一句理由”）。
+
+\textbf{B7.} 举一个严平稳但不宽平稳的例子（提示：考虑二阶矩不存在的分布）。
+
+\textbf{B8.} 设 $X(t)$ 宽平稳，$Y(t)=X(t)+c$（$c$ 为常数）。证明 $Y(t)$ 仍宽平稳，并写出 $\mu_Y$ 与 $R_Y$。
+
+\clearpage
+\Needspace{6\baselineskip}
+\section{单元 7 答案与解析}
+\textbf{B1.} 对每个 $t\in T$，$X(t)$ 都是同一概率空间上的随机变量。固定 $t$ 得一个随机变量；固定 $\omega$ 得一条样本函数（轨道）。
+
+\textbf{B2.} $\mu_X(t)=0$；$R_X(s,t)=\cos\omega s\cos\omega t+\sin\omega s\sin\omega t=\cos\omega(t-s)$，只依赖差，故宽平稳。
+
+\textbf{B3.} 对称性：交换坐标不改变联合分布；相容性：多余坐标取 $+\infty$ 后退回低维分布。Kolmogorov 定理说明满足这两条的分布族必对应某个随机过程。
+
+\textbf{B4.} $F_t(x)=P(tA\le x)=P(A\le x/t)=\Phi(x/t)$（$t>0$）；$R_X(s,t)=st$，依赖 $s,t$ 的乘积，不是只依赖差，故不宽平稳。
+
+\textbf{B5.} $P(N(t_1)=k,N(t_2)=j)=P(N(t_1)=k)P(N(t_2)-N(t_1)=j-k)=\frac{(\lambda t_1)^k}{k!}e^{-\lambda t_1}\cdot\frac{[\lambda(t_2-t_1)]^{j-k}}{(j-k)!}e^{-\lambda(t_2-t_1)}$，要求 $0\le k\le j$。
+
+\textbf{B6.} 是。独立增量过程满足“已知现在，未来增量与过去独立”，这正是马尔可夫性。
+
+\textbf{B7.} 例如 $X(t)=X$ 对一切 $t$ 成立，$X$ 服从柯西分布。严平稳显然；但二阶矩不存在，宽平稳无从谈起。
+
+\textbf{B8.} $\mu_Y=\mu_X+c$ 为常数；$R_Y(s,t)=R_X(s,t)+c\mu_X+c\mu_X+c^2$，仍只依赖 $t-s$，故宽平稳。
+
+\clearpage
+\Needspace{6\baselineskip}
+\section{单元 8 复习要点与反馈}
+\begin{itemize}
+\item 今天必须能不看书写出：随机过程定义与两种“固定”的理解；有限维分布族的两条相容条件与 Kolmogorov 定理；$\mu_X,R_X,C_X$ 的定义与关系；严平稳与宽平稳的条件和区别；独立增量与平稳增量的定义。
+\item 明天开始第 3 章泊松过程，会直接使用“独立平稳增量”和“均值函数”这两个概念；今天 B5 的联合分布列就是第 3 章例题的原型。
+\item 反馈方式：把 B1—B8 的答案发我；我会把掌握状态写回知识清单，并把第 3 章第一课的起点按你的实际水平调整。
+\end{itemize}
+\end{document}

@@ -1,0 +1,210 @@
+\documentclass[UTF8,a4paper,11pt]{ctexart}
+\usepackage[margin=22mm,headheight=14pt,footskip=12mm]{geometry}
+\usepackage{amsmath,amssymb,array,longtable,booktabs,tikz,needspace,enumitem,fancyhdr,hyperref}
+\usepackage{microtype}
+\hypersetup{colorlinks=false,pdfborder={0 0 0},pdfauthor={Good Learning},bookmarks=false}
+\newfontfamily\circledfont{Segoe UI Symbol}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\setlength{\LTleft}{0pt}\setlength{\LTright}{0pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{.65em}
+\linespread{1.18}
+\raggedbottom
+\setcounter{secnumdepth}{0}
+\setlist{leftmargin=2.2em,itemsep=.4em,topsep=.5em}
+\ctexset{section={format=\Large\bfseries\sffamily,beforeskip=1.35em,afterskip=.65em},
+subsection={format=\large\bfseries\sffamily,beforeskip=1em,afterskip=.45em}}
+\newcommand{\chaptertitle}[1]{\Needspace{8\baselineskip}\noindent{\LARGE\bfseries\sffamily #1}\par\vspace{4mm}\hrule\vspace{6mm}}
+\newcommand{\CompactQuestion}[2]{\par\noindent\textbf{#1.}\ #2\par\vspace{.8em}}
+\newcommand{\PracticeQuestion}[3]{\par\Needspace{4\baselineskip}\noindent\begin{minipage}{\linewidth}\textbf{#1.}\ #2\par\noindent\rule{0pt}{#3mm}\par\end{minipage}\par}
+\newcommand{\CompactQuestionColon}[2]{\par\noindent\textbf{#1：}\ #2\par\vspace{.8em}}
+\newcommand{\PracticeQuestionColon}[3]{\par\Needspace{4\baselineskip}\noindent\begin{minipage}{\linewidth}\textbf{#1：}\ #2\par\noindent\rule{0pt}{#3mm}\par\end{minipage}\par}
+\pagestyle{fancy}\fancyhf{}\fancyfoot[C]{\thepage}\renewcommand{\headrulewidth}{0pt}
+\begin{document}
+\thispagestyle{empty}
+\noindent{\sffamily\footnotesize 备考路径}\hfill{\sffamily\footnotesize 学习导图}\par
+\vspace{7mm}
+\noindent{\sffamily\fontsize{25}{30}\selectfont\bfseries 应用随机过程 · 21 天备考路径}\par
+\vspace{4mm}\noindent\rule{\linewidth}{.85pt}\par\vspace{6mm}
+\begin{center}
+\begin{tikzpicture}[x=1cm,y=1cm,>=stealth,every node/.style={font=\sffamily}]
+\path[use as bounding box] (-8.1,-19.3) rectangle (8.1,.4);
+\node[anchor=west,font=\sffamily\Large\bfseries] at (-7.5,-.55) {应用随机过程 · 21 天备考路径};
+\node[anchor=east,font=\sffamily\small,text=black!55] at (7.5,-.55) {2026-10-25 → 11-15};
+\draw[black!45,line width=.7pt] (-6.65,-1.75) -- (-6.65,-16.65);
+\node[circle,draw=black,line width=.7pt,minimum size=9mm,fill=white,font=\sffamily\small\bfseries] at (-6.65,-2.25) {01};
+\node[anchor=west,font=\sffamily\large\bfseries] at (-5.75,-1.8) {第1—2章 打底};
+\node[anchor=east,font=\sffamily\small,text=black!55] at (7.45,-1.8) {10-25 晚};
+\node[anchor=north west,text width=12.8cm,align=left,font=\sffamily\small] at (-5.75,-2.4) {预备知识 + 基本概念\quad{}·\quad{}两课练习 ≥ 6/8 题};
+\draw[black!25,line width=.4pt] (-5.75,-3.6) -- (7.45,-3.6);
+\node[circle,draw=black,line width=.7pt,minimum size=9mm,fill=white,font=\sffamily\small\bfseries] at (-6.65,-5.6) {02};
+\node[anchor=west,font=\sffamily\large\bfseries] at (-5.75,-5.1499999999999995) {第3章 Poisson};
+\node[anchor=east,font=\sffamily\small,text=black!55] at (7.45,-5.1499999999999995) {10-26 — 10-27};
+\node[anchor=north west,text width=12.8cm,align=left,font=\sffamily\small] at (-5.75,-5.75) {条件分布 · 二阶矩\quad{}·\quad{}两类题各 3 题全对};
+\draw[black!25,line width=.4pt] (-5.75,-6.949999999999999) -- (7.45,-6.949999999999999);
+\node[circle,draw=black,line width=.7pt,minimum size=9mm,fill=white,font=\sffamily\small\bfseries] at (-6.65,-8.95) {03};
+\node[anchor=west,font=\sffamily\large\bfseries] at (-5.75,-8.5) {第4—5章 主线};
+\node[anchor=east,font=\sffamily\small,text=black!55] at (7.45,-8.5) {10-28 — 11-02};
+\node[anchor=north west,text width=12.8cm,align=left,font=\sffamily\small] at (-5.75,-9.1) {更新方程 · Markov 链\quad{}·\quad{}平稳分布限时 15 分钟};
+\draw[black!25,line width=.4pt] (-5.75,-10.299999999999999) -- (7.45,-10.299999999999999);
+\node[circle,draw=black,line width=.7pt,minimum size=9mm,fill=white,font=\sffamily\small\bfseries] at (-6.65,-12.3) {04};
+\node[anchor=west,font=\sffamily\large\bfseries] at (-5.75,-11.850000000000001) {第6—7章 收口};
+\node[anchor=east,font=\sffamily\small,text=black!55] at (7.45,-11.850000000000001) {11-03 — 11-06};
+\node[anchor=north west,text width=12.8cm,align=left,font=\sffamily\small] at (-5.75,-12.450000000000001) {鞅的停时 · Brown 运动\quad{}·\quad{}默写定义并用停时算期望};
+\draw[black!25,line width=.4pt] (-5.75,-13.65) -- (7.45,-13.65);
+\node[circle,draw=black,line width=.7pt,minimum size=9mm,fill=white,font=\sffamily\small\bfseries] at (-6.65,-15.65) {05};
+\node[anchor=west,font=\sffamily\large\bfseries] at (-5.75,-15.200000000000001) {真题与模拟};
+\node[anchor=east,font=\sffamily\small,text=black!55] at (7.45,-15.200000000000001) {11-07 — 11-14};
+\node[anchor=north west,text width=12.8cm,align=left,font=\sffamily\small] at (-5.75,-15.8) {真题两刷 + 两套模拟\quad{}·\quad{}正确率 70\% 以上};
+\draw[black!25,line width=.4pt] (-5.75,-17.0) -- (7.45,-17.0);
+\draw[black!45,line width=.7pt] (-7.5,-18.35) -- (7.5,-18.35);
+\node[anchor=west,font=\sffamily\bfseries] at (-7.4,-18.8) {复盘回路};
+\node[anchor=east,font=\sffamily\small] at (7.4,-18.8) {每周六复盘  →  阶段测定难度  →  错题回炉};
+\end{tikzpicture}
+\end{center}
+\clearpage
+
+\chaptertitle{应用随机过程 · 备考计划（第二版）}
+考试：2026-11-15（周日）。起点：2026-10-25（周日）17:00。范围：教材第 1—7 章（张波等，第 6 版，第 001—160 页）。每天 2—3 小时，合计约 52 小时。
+
+第二版的调整依据：教材版本与页码已确认；真题（2023 级）已到手，题型集中在特征函数、泊松过程、马尔可夫链、鞅与布朗运动定义，因此把“零基础先补概率论”压缩成第 1 章内嵌复习，把时间前移到第 3、5、6、7 章。每天的任务用知识点编号引用 `知识清单.md`，不复制清单内容。
+
+\Needspace{6\baselineskip}
+\section{一、时间与阶段}
+{\small\renewcommand{\arraystretch}{1.38}\setlength{\tabcolsep}{3.5pt}
+\begin{longtable}{P{0.14\linewidth}P{0.17\linewidth}P{0.31\linewidth}P{0.31\linewidth}}
+\toprule
+\bfseries 阶段 & \bfseries 日期 & \bfseries 任务 & \bfseries 切换标准 \\
+\midrule
+\endfirsthead
+\toprule
+\bfseries 阶段 & \bfseries 日期 & \bfseries 任务 & \bfseries 切换标准 \\
+\midrule
+\endhead
+S0 第 1—2 章 & 10-25 晚（今天） & 1.1—1.5、2.1—2.3 全部；D001、D002 两课 & A1—A8、B1—B8 各能独立做完 6 题以上 \\
+\addlinespace[.35em]
+S1 Poisson 过程 & 10-26 — 10-27 & 3.1—3.3 全章 + 习题 & 条件分布与二阶矩两类题各 3 题全对 \\
+\addlinespace[.35em]
+S2 更新过程 & 10-28 — 10-29 & 4.1—4.4 + 习题 & 会列并解更新方程，能说清更新报酬定理条件 \\
+\addlinespace[.35em]
+S3 Markov 链 & 10-30 — 11-02 & 5.1—5.5 + 习题 + 阶段测 A（第 1—5 章） & 平稳分布题限时 15 分钟；阶段测 ≥ 60\% \\
+\addlinespace[.35em]
+S4 鞅 & 11-03 — 11-04 & 6.1—6.2 为主，6.3—6.5 只记结论 & 会验证鞅的定义，会用停时定理算期望 \\
+\addlinespace[.35em]
+S5 Brown 运动 & 11-05 — 11-06 & 7.1—7.5 为主，7.6—7.7 记结论 & 能默写定义与性质，会反射原理 \\
+\addlinespace[.35em]
+S6 真题与二轮 & 11-07 — 11-10 & 2023 级真题全卷 + 按章回炉错题 & 真题 ≥ 70\%；错题全部有订正 \\
+\addlinespace[.35em]
+S7 模拟冲刺 & 11-11 — 11-14 & 两套模拟（自出/改编）+ 公式卡 & 模拟 ≥ 70\%，公式卡一页定稿 \\
+\addlinespace[.35em]
+考试 & 11-15 & 只看公式卡 & — \\
+\addlinespace[.35em]
+\bottomrule
+\end{longtable}
+}
+\Needspace{6\baselineskip}
+\section{二、逐日安排}
+{\small\renewcommand{\arraystretch}{1.38}\setlength{\tabcolsep}{3.5pt}
+\begin{longtable}{P{0.14\linewidth}P{0.17\linewidth}P{0.31\linewidth}P{0.31\linewidth}}
+\toprule
+\bfseries 日期 & \bfseries 用时 & \bfseries 任务（知识编号） & \bfseries 验收产物 \\
+\midrule
+\endfirsthead
+\toprule
+\bfseries 日期 & \bfseries 用时 & \bfseries 任务（知识编号） & \bfseries 验收产物 \\
+\midrule
+\endhead
+10-25 日 & 4.5h & 1.1-a—1.5-a（D001）；2.1-a—2.3-d（D002） & 两课练习答案；五个特征函数默写 \\
+\addlinespace[.35em]
+10-26 一 & 2.5h & 3.1-a、3.1-b、3.1-c；教材例 3.1 系列 & 到达间隔与条件分布各 2 题 \\
+\addlinespace[.35em]
+10-27 二 & 2.5h & 3.2-a、3.2-b、3.3-a—3.3-c；第 3 章习题 & $E[N(s)N(t)]$ 推导 2 遍；非齐次题 2 道 \\
+\addlinespace[.35em]
+10-28 三 & 2.5h & 4.1-a、4.2-a：定义、$m(t)$、更新方程 & 独立列 3 个更新方程 \\
+\addlinespace[.35em]
+10-29 四 & 2.5h & 4.3-a、4.4-a + 习题 & Laplace 法解 2 题；可用度 1 题 \\
+\addlinespace[.35em]
+10-30 五 & 2.5h & 5.1-a：转移矩阵、C-K 方程、$n$ 步转移 & 手算 $P^2,P^3$ 并与 $P^{(n)}$ 对照 \\
+\addlinespace[.35em]
+10-31 六 & 3h & 5.2-a、5.3-a：状态分类、平稳分布 & 三类链的平稳分布各 1 题 \\
+\addlinespace[.35em]
+11-01 日 & 3h & 5.4-a、5.4-b：首达、吸收概率、期望方程；真题摸球题 & 赌徒破产/摸球题完整步骤 \\
+\addlinespace[.35em]
+11-02 一 & 3h & 5.5-a、5.5-b；第 5 章习题；阶段测 A（60 分钟） & 阶段测成绩；M/M/1 稳态分布 \\
+\addlinespace[.35em]
+11-03 二 & 2.5h & 6.1-a：鞅定义与条件期望验证 & 判断 5 个过程是否鞅，写理由 \\
+\addlinespace[.35em]
+11-04 三 & 2.5h & 6.2-a：停时、可选停时定理 + 6.3—6.5 结论 & 用停时定理算 2 个期望 \\
+\addlinespace[.35em]
+11-05 四 & 2.5h & 7.1-a、7.2-a：定义、性质、Gauss 过程 & 默写定义与四条性质 \\
+\addlinespace[.35em]
+11-06 五 & 3h & 7.3-a—7.5-a：鞅性质、Markov 性、反射原理 & 首达时间分布推导 1 遍 \\
+\addlinespace[.35em]
+11-07 六 & 3h & 2023 级真题限时（100 分钟）+ 订正 & 得分、失分题型、耗时 \\
+\addlinespace[.35em]
+11-08 日 & 3h & 真题二刷 + 第 1—2 章回炉（1.3、1.5、2.3） & 错题清零清单 \\
+\addlinespace[.35em]
+11-09 一 & 2.5h & 第 3—4 章回炉：条件分布、更新方程 & 每类题限时 12 分钟达标 \\
+\addlinespace[.35em]
+11-10 二 & 2.5h & 第 5—6 章回炉：平稳分布、鞅的停时 & 平稳分布 15 分钟达标 \\
+\addlinespace[.35em]
+11-11 三 & 3h & 模拟卷 1（限时 100 分钟）+ 订正 & 得分与错因分类 \\
+\addlinespace[.35em]
+11-12 四 & 3h & 模拟卷 2 + 第 7 章回炉 & 反射原理与定义题全对 \\
+\addlinespace[.35em]
+11-13 五 & 2.5h & 全部错题重做；公式卡补漏 & 错题二次正确率 ≥ 80\% \\
+\addlinespace[.35em]
+11-14 六 & 2h & 公式卡定稿；轻量回顾；早睡 & 一页公式卡 \\
+\addlinespace[.35em]
+11-15 日 & — & 考试 & — \\
+\addlinespace[.35em]
+\bottomrule
+\end{longtable}
+}
+\Needspace{6\baselineskip}
+\section{三、固定动作}
+\begin{itemize}
+\item 每次做题先写“设、求、由什么公式”，再动笔；真题按 100 分钟计时模拟。
+\item 每天最后 10 分钟空白回忆：写出当天 3 个核心公式及适用条件，写不出即为次日第一件事。
+\item 每周六复盘：重做本周错题，更新“会/不会/待问”三栏；每周日做阶段测或综合练习。
+\end{itemize}
+\Needspace{6\baselineskip}
+\section{四、指标与调整规则}
+记录：总分、按知识编号的得分率、单题耗时、错因分类（概念不清 / 条件漏用 / 计算失误 / 读题偏差）。
+
+\begin{enumerate}
+\item 某编号连续两次正确率低于 50\%：次日用 40 分钟回炉该编号，后续内容顺延一天。
+\item 计算失误占错因一半以上：练习减量三分之一，增加手算规范训练（矩阵、积分、级数各 20 分钟）。
+\item 阶段测或模拟 ≥ 80\%：跳过该阶段基础题，把时间转给真题与薄弱章。
+\item 连续两天实际学习不足 1.5 小时：压缩 6.3—6.5、7.6—7.7 为“只背结论”，保真题与模拟。
+\item 11-12 仍未掌握 5.3 平稳分布：优先保证 $\pi P=\pi$ 与 $\pi Q=0$ 两个标准题型，其余排队指标只背公式。
+\end{enumerate}
+\Needspace{6\baselineskip}
+\section{五、材料与缺口}
+{\small\renewcommand{\arraystretch}{1.38}\setlength{\tabcolsep}{3.5pt}
+\begin{longtable}{P{0.17\linewidth}P{0.48\linewidth}P{0.28\linewidth}}
+\toprule
+\bfseries 材料 & \bfseries 状态 & \bfseries 影响 \\
+\midrule
+\endfirsthead
+\toprule
+\bfseries 材料 & \bfseries 状态 & \bfseries 影响 \\
+\midrule
+\endhead
+教材（第 6 版） & 已有（扫描版） & 页码与章节已核对，可直接引用 \\
+\addlinespace[.35em]
+李英老师笔记 & 已有（21 页手写） & 提供课堂例题与侧重，已用于第 1—2 章课程 \\
+\addlinespace[.35em]
+2023 级真题 & 已有（含手写解答） & 题型已确认，但只有一份，权重不精确外推 \\
+\addlinespace[.35em]
+其他年份真题 & 缺 & 若有，请补发，可提高模拟卷的针对性 \\
+\addlinespace[.35em]
+考试形式（时长/闭卷/能否带公式表） & 未知 & 影响模拟时长与公式卡策略，请确认 \\
+\addlinespace[.35em]
+\bottomrule
+\end{longtable}
+}
+\Needspace{6\baselineskip}
+\section{六、今天的执行点}
+今晚只做两件事：D001 第 1 章（2.5 小时）、D002 第 2 章（2 小时）。做完把 A1—A8、B1—B8 的答案发我，我据此更新掌握状态并调整第 3 章第一课的起点。若时间不够，优先保证 D001 的特征函数与条件期望两部分，第 2 章的 B5、B6 可留到明早。
+
+\end{document}
